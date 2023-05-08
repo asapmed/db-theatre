@@ -1,0 +1,8 @@
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRANSACTION
+
+UPDATE person_general_information
+	SET date_of_birth = '15.01.2002'
+	WHERE person_id = 18;
+
+COMMIT
